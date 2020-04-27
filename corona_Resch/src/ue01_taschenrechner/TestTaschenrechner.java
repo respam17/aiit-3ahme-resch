@@ -45,6 +45,6 @@ public class TestTaschenrechner {
        System.out.format("  Addtion:        " + taschenrechner.getAdditionsResult()+ "\n");
        System.out.format("  Subtraktion:    " + taschenrechner.getSubtractionResult()+ "\n");
        System.out.format("  Mutliplikation: " + taschenrechner.getMultiplicationResult() + "\n");
-       System.out.format("  Division:       " +taschenrechner.getDivisionResult() + "\n");
+       System.out.format("  Division:       " + taschenrechner.getDivisionResult() + "\n");
     }
 }
