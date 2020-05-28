@@ -5,10 +5,11 @@
  */
 package klassendiagramme_koerper;
 
+
 /**
  *
  * @author paul4
  */
-class KoerperGruppe {
-    
+public class KoerperGruppe extends Koerper{
+
 }
