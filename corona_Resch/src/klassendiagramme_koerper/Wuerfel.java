@@ -5,14 +5,17 @@
  */
 package klassendiagramme_koerper;
 
+import java.util.Locale;
+
 /**
  *
  * @author paul4
  */
 public class Wuerfel extends Koerper{
+    
     private double a;
 
-    public Wuerfel(double a, double dichte) {
+    public Wuerfel(double a, double dichte) throws IllegalArgumentException {
         super(dichte);
         this.a = a;
     }
@@ -26,17 +29,17 @@ public class Wuerfel extends Koerper{
     }
 
     @Override
-    public double oberfläche() {
-        return a * a * 6;
+    public double oberflaeche() {
+        return 6 * a * a;
     }
 
     @Override
     public double volumen() {
         return a * a * a;
-    } 
+    }
 
     @Override
     public String toString() {
-        return "Wuerfel{" + "a=" + a + '}';
+        return String.format(Locale.ENGLISH, "{(\"a\":%e,\"dichte\":%e}", a, dichte);
     }
 }

@@ -10,11 +10,15 @@ package klassendiagramme_koerper;
  * @author paul4
  */
 public abstract class Koerper {
-    private double dichte;
-    public double DICHTE_EICHE = 670;
-    public double DICHTE_BUCHE = 690;
+    
+    protected double dichte;
+    public static final double DICHTE_EICHE = 670;
+    public static final double DICHTE_BUCHE = 690;
 
-    public Koerper(double dichte) {
+    public Koerper (double dichte) throws IllegalArgumentException {
+        if (dichte < 0) {
+            throw new IllegalArgumentException("invalid parameter dichte");
+        }
         this.dichte = dichte;
     }
 
@@ -26,11 +30,10 @@ public abstract class Koerper {
         this.dichte = dichte;
     }
     
-    public abstract double oberfläche();
+    public abstract double oberflaeche ();
+    public abstract double volumen ();
     
-    public abstract double volumen();
-    
-    public double masse() {
-        return volumen()*dichte;
+    public double masse () {
+        return volumen() * dichte;
     }
 }
