@@ -40,6 +40,6 @@ public class Wuerfel extends Koerper{
 
     @Override
     public String toString() {
-        return String.format(Locale.ENGLISH, "{(\"a\":%e,\"dichte\":%e}", a, dichte);
+        return String.format(Locale.ENGLISH, "{\"a\":%e,\"dichte\":%e}", a, dichte);
     }
 }

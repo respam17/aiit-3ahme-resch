@@ -21,6 +21,11 @@ public class Kugel extends Koerper{
         }
         this.r = r;
     }
+    
+    public Kugel (double r, double dichte) {
+        super(dichte);
+        this.r = r;
+    }
 
     public double getR() {
         return r;
