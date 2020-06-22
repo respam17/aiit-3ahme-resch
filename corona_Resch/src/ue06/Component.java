@@ -10,10 +10,10 @@ package ue06;
  * @author paul4
  */
  
-public class Component {
+public abstract class Component {
     
     private final String id;
-    private final double value;
+    final double value;
     private double voltage;
     private double current;
 
