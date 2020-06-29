@@ -18,7 +18,6 @@ public class Capacitor extends Component {
     public Capacitor(String id, double value) {
         super(id, value);
     }
-
     
     @Override
     public String unit() {
